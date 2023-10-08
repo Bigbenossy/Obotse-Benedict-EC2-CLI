@@ -28,11 +28,12 @@
 
 ![Alt text](<2023-10-08 (5).png>)
 
-## Step 4: Launch Instance
+## Step 4: Add Inbound Rule
 - To Add inbound rule use the Line Command: “aws ec2 authorize-security-group-ingress --group-id <security group Id> --protocol tcp --port <port Number> --cidr <ip address>”
 
 ![Alt text](<2023-10-08 (7).png>)
 
+## Step 5: Launch Instance
 - To Launch Instance use the Line Command: "aws ec2 run-instances --image-id <ami-Id> --count 1 --instance-type <type> --keyname <keypair-Name> --security-groups <security grp Name>"
 
 ![Alt text](<2023-10-08 (10).png>)
@@ -43,28 +44,28 @@
 
 ![Alt text](<2023-10-08 (13).png>)
 
-## Step 5: View running Instance
+## Step 6: View Running Instance
 - To view the Details of the Running Instance use the Line Command:"aws ec2 describe-instances"
 
 ![Alt text](<2023-10-08 (14).png>)
 
 ![Alt text](<2023-10-08 (16).png>)
 
-## Step 6: Terminate running instance
+## Step 7: Terminate Running Instance
 - To Terminate the Running Instance use the Line Command:"aws ec2 terminate-instances --instance-ids <Instance-Id> "
 
 ![Alt text](<2023-10-08 (17).png>)
 
 ![Alt text](<2023-10-08 (19).png>)
 
-## Step 7: Delete Key Pair
+## Step 8: Delete Key Pair
 - To Delete key pair of the Instance use the Line Command: "aws ec2 delete-key-pair --key-name <keypair-Name>"
 
 ![Alt text](<2023-10-08 (20).png>)
 
 ![Alt text](<2023-10-08 (22).png>)
 
-## Step 8: Delete Security Group
+## Step 9: Delete Security Group
 - To Delete key pair of the Instance use the Line Command: "aws ec2 delete-security-group --group-name <security group Name>"
 
 ![Alt text](<2023-10-08 (23).png>)
